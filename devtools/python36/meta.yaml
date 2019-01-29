@@ -1,0 +1,25 @@
+package:
+  name: gevent_openssl
+  version: 1.2
+
+source:
+  path: ../../
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python {{ python }}
+
+  run:
+    - python  {{ python }}
+    - pyopenssl
+    - gevent
+
+about:
+  home: https://github.com/mjs/gevent_openssl
+  license: https://github.com/mjs/gevent_openssl/blob/master/COPYING
+  summary: ""
+  description: |
+    This is a copy of https://github.com/mjs/gevent_openssl to be installed with python 3.6 and 3.7.
